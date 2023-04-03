@@ -3,8 +3,6 @@
   margin: 0;
 }
 
-
-
 header{
   /* position: fixed; */
   top: 0;
@@ -14,7 +12,6 @@ header{
   width: 100%;
   color: white;
   background-color: rgba(4, 9, 9, 0.74);
-  /* background-color: rgba(4, 9, 9, 0.74); */
 }
 
 header .nav-contents{
@@ -50,19 +47,19 @@ header p{
   font-size: 30px;
 }
 
-.nav-sub-contents {
-}
-
-button {
-  margin: 15px;
+.buttons button {
+  margin: 15px 10px 100px 10px;
   width: 100px;
   border: 2px solid #e7e7e7;
   border-radius: 5px;
-  background: #e7e7e7;
+  /* background: #e7e7e7; */
+  background: white;
   font-size: 16px;
   text-align: center;
   padding: 15px 0;
   cursor: pointer;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
@@ -70,7 +67,7 @@ button {
   width: 100%;
   text-align: center;
 }
-
+/*
 .button1 {
   color:rgba(41, 41, 41, 0.38);
 }
@@ -81,4 +78,29 @@ button {
 
 .button1 {
   color:rgba(255, 0, 8, 0.47)
+} */
+
+
+#card-list{
+  justify-content: center;
+  display: flex;
+}
+
+.single-card {
+  margin: 0 30px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.single-card image{
+ width: 3000px;
+}
+
+
+footer {
+  height: 300px;
+  text-align: center;
+}
+
+footer p{
+  margin: 200px;
 }
