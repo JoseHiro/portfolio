@@ -1,7 +1,11 @@
 import React from 'react'
-import Header from './header'
-import TopBody from './body';
+import Header from './Header'
+import TopBody from './Body';
 import SecBody from './Sec-Body';
+import Footer from './Footer';
+import ThirdBody from './Third-Body';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -9,6 +13,8 @@ function App() {
       <Header/>
       <TopBody/>
       <SecBody/>
+      <ThirdBody/>
+      <Footer/>
     </div>
 
   )

@@ -1,16 +1,20 @@
-import React from 'react';
-import Card from './Card';
+import React, {useState} from 'react';
+import CardList from './Card-List';
+import Buttons from './Buttons';
 
 function SecBody(){
+  const [clickedStatus, setClick] = useState([false, false, false])
+  console.log(clickedStatus);
+
+  function setClickStatus(){
+    console.log('hello');
+  }
   return (
     <div>
-      <div className="buttons">
-        <button className="button1">GitHub</button>
-        <button className="button2">Skills</button>
-        <button className="button3">Contact</button>
-      </div>
+      <h1>Works</h1>
+      <Buttons clickedStatus={clickedStatus} setClickStatus={setClickStatus}/>
       <div>
-        <Card/>
+        <CardList/>
       </div>
     </div>
   )
