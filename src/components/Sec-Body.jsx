@@ -3,18 +3,32 @@ import CardList from './Card-List';
 import Buttons from './Buttons';
 
 function SecBody(){
-  const [clickedStatus, setClick] = useState([false, false, false])
-  console.log(clickedStatus);
+  const [clickedStatus, setbuttons] = useState([false, false, false]);
 
-  function setClickStatus(){
-    console.log('hello');
+  const buttonsData = [
+    { id: 0, className: "button1", btnName: "GitHub" },
+    { id: 1, className: "button2", btnName: "Skills"},
+    { id: 2, className: "button3", btnName: "Contact"}]
+
+  function setClickStatus(event){
+    let result = [false, false, false];
+    result[parseInt(event)] = true;
+    setbuttons(result);
   }
+
   return (
     <div>
       <h1>Works</h1>
-      <Buttons clickedStatus={clickedStatus} setClickStatus={setClickStatus}/>
+      <div className="buttons">
+        {buttonsData.map((data) => <Buttons
+          setButtonStatus={setClickStatus}
+          btnId={data.id}
+          btnClass={data.className}
+          btnName={data.btnName}/>
+        )}
+      </div>
       <div>
-        <CardList/>
+        <CardList cardList={1} status={clickedStatus}/>
       </div>
     </div>
   )
