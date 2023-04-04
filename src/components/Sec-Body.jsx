@@ -1,38 +1,42 @@
 import React, {useState} from 'react';
 import CardList from './Card-List';
 import Buttons from './Buttons';
-// import { Container } from 'react-bootstrap';
 
 function SecBody(){
   const [clickedStatus, setbuttons] = useState([false, false, false]);
 
   const buttonsData = [
-    { id: 0, className: "button1", btnName: "GitHub" },
+    { id: 0, className: "button1", btnName: "GitHub"},
     { id: 1, className: "button2", btnName: "Skills"},
     { id: 2, className: "button3", btnName: "Contact"}]
 
   function setClickStatus(event){
-    let result = [false, false, false];
-    result[parseInt(event)] = true;
-    setbuttons(result);
+    console.log('hello')
+    if(clickedStatus[parseInt(event)] === true){
+      setbuttons([false, false, false]);
+    }else{
+      let result = [false, false, false];
+      result[parseInt(event)] = true;
+      setbuttons(result);
+    }
   }
 
   return (
-    <container>
+    <container id="sec-body-container">
       <div className="buttons">
-        <div className="contents-name">
-          <h1 >Works</h1>
-        </div>
+        <h1>Works</h1>
         {buttonsData.map((data) => <Buttons
           setButtonStatus={setClickStatus}
           btnId={data.id}
           btnClass={data.className}
-          btnName={data.btnName}/>
+          btnName={data.btnName}
+          />
         )}
       </div>
-      <div>
-        <CardList cardList={1} status={clickedStatus}/>
-      </div>
+        <div id="card-list">
+          <CardList cardList={1} status={clickedStatus} setButtonStatus={setClickStatus}/>
+        </div>
+
     </container>
   )
 }

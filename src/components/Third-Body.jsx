@@ -6,40 +6,36 @@ import CardList from './Card-List';
 function ThirdBody(){
   const [clickedStatus, setbuttons] = useState([false, false, false]);
 
-  function setClickStatus(event){
-    let newStatus = [false, false, false];
-    newStatus[event - 3] = true;
-    setbuttons(newStatus);
-  }
-  const buttonsData =
-  [
-    {
-      id: 3,
-      className: "button4",
-      btnName: "Skills"
-    },
-    {
-      id: 4,
-      className: "button5",
-      btnName: "Road"
-    },
-    {
-      id: 5,
-      className: "button6",
-      btnName: "Third"
+ function setClickStatus(event){
+    if(clickedStatus[parseInt(event)] === true){
+      setbuttons([false, false, false]);
+    }else{
+      let result = [false, false, false];
+      result[parseInt(event) - 3] = true;
+      setbuttons(result);
     }
-  ]
+  }
+
+  const buttonsData =
+  [ {id: 3, className: "button4", btnName: "Skills"},
+    {id: 4, className: "button5", btnName: "Road"},
+    {id: 5, className: "button6", btnName: "Third"}]
 
   return (
-    <div>
+    <container id="third-body-container">
       <div className="buttons">
-      <h1 className="contents-name">Skills</h1>
-        {buttonsData.map((data) => <Buttons setButtonStatus={setClickStatus} btnId={data.id} btnClass={data.className} btnName={data.btnName}/>)}
+      <h1>Skills</h1>
+        {buttonsData.map((data) => <Buttons
+        setButtonStatus={setClickStatus}
+        btnId={data.id}
+        btnClass={data.className}
+        btnName={data.btnName}/>
+        )}
       </div>
-      <div>
-        <CardList cardList={2} status={clickedStatus}/>
+      <div id="card-list">
+        <CardList cardList={2} status={clickedStatus} setButtonStatus={setClickStatus}/>
       </div>
-    </div>
+    </container>
   )
 }
 

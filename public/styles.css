@@ -51,27 +51,43 @@ header p{
   font-size: 30px;
 }
 
-.contents-name{
-  margin-top: 40px;
-}
+/* #secBody-container {
+  padding: 0 500px;
+} */
 
 .buttons button {
-  margin: 15px 10px 100px 10px;
   width: 100px;
   border: 2px solid #e7e7e7;
   border-radius: 5px;
   background: white;
   font-size: 16px;
-  text-align: center;
   padding: 15px 0;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.button1,.button4{
+  margin-right: 8px;
+}
+
+.button2,.button5{
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.button3,.button6{
+  margin-left: 8px;
+}
+
 .buttons {
-  margin-top: 30px;
-  width: 100%;
-  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 200px;
+  text-align: left;
+}
+
+.buttons h1{
+  text-align: left;
 }
 
 #card-list{
@@ -79,15 +95,22 @@ header p{
   display: flex;
 }
 
+.card1, .card4{
+  margin-right: 15px;
+}
+
+.card2, .card5 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.card3, .card6{
+  margin-left: 15px;
+}
+
 .single-card {
-  margin: 0 30px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-
-.single-card image{
- width: 3000px;
-}
-
 
 footer {
   height: 300px;
