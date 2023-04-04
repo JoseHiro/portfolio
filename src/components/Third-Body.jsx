@@ -1,10 +1,16 @@
-import React from 'react';
-import SingleCard from './Card';
+import React, {useState} from 'react';
+// import SingleCard from './Card';
 import Buttons from './Buttons';
-// import CardList from './Card-List';
+import CardList from './Card-List';
 
 function ThirdBody(){
+  const [clickedStatus, setbuttons] = useState([false, false, false]);
 
+  function setClickStatus(event){
+    let newStatus = [false, false, false];
+    newStatus[event - 3] = true;
+    setbuttons(newStatus);
+  }
   const buttonsData =
   [
     {
@@ -23,17 +29,15 @@ function ThirdBody(){
       btnName: "Third"
     }
   ]
+
   return (
     <div>
-      <h1>Skills</h1>
       <div className="buttons">
-        {buttonsData.map((data) => <Buttons btnId={data.id} btnClass={data.className} btnName={data.btnName}/>)}
+      <h1 className="contents-name">Skills</h1>
+        {buttonsData.map((data) => <Buttons setButtonStatus={setClickStatus} btnId={data.id} btnClass={data.className} btnName={data.btnName}/>)}
       </div>
-       {/* <CardList/> */}
-      <div id="card-list">
-        <SingleCard></SingleCard>
-        <SingleCard></SingleCard>
-        <SingleCard></SingleCard>
+      <div>
+        <CardList cardList={2} status={clickedStatus}/>
       </div>
     </div>
   )
