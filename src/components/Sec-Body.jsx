@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import CardList from './Card-List';
 import Buttons from './Buttons';
+// import { Container } from 'react-bootstrap';
 
 function SecBody(){
   const [clickedStatus, setbuttons] = useState([false, false, false]);
@@ -17,9 +18,11 @@ function SecBody(){
   }
 
   return (
-    <div>
-      <h1>Works</h1>
+    <container>
       <div className="buttons">
+        <div className="contents-name">
+          <h1 >Works</h1>
+        </div>
         {buttonsData.map((data) => <Buttons
           setButtonStatus={setClickStatus}
           btnId={data.id}
@@ -30,7 +33,7 @@ function SecBody(){
       <div>
         <CardList cardList={1} status={clickedStatus}/>
       </div>
-    </div>
+    </container>
   )
 }
 
