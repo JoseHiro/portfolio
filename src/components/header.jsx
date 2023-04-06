@@ -13,7 +13,6 @@ function Header(){
           <NavSubContents title={"Contact"}/>
           <p><GitHubIcon/></p>
           <p><LinkedInIcon/></p>
-
         </div>
     </header>
   )
