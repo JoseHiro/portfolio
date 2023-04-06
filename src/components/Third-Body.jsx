@@ -7,7 +7,7 @@ function ThirdBody(){
   const [clickedStatus, setbuttons] = useState([false, false, false]);
 
  function setClickStatus(event){
-    if(clickedStatus[parseInt(event)] === true){
+    if(clickedStatus[parseInt(event) - 3] === true){
       setbuttons([false, false, false]);
     }else{
       let result = [false, false, false];
