@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 // import SingleCard from './Card';
 import Buttons from './Buttons';
-import CardList from './Card-List';
+import CardList from './Card-list';
 
 function ThirdBody(){
   const [clickedStatus, setbuttons] = useState([false, false, false]);

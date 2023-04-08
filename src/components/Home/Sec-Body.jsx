@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import CardList from './Card-List';
+import CardList from './Card-list';
 import Buttons from './Buttons';
 
 function SecBody(){
