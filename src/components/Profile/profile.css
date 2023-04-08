@@ -1,0 +1,65 @@
+#profile-container {
+  height: 100vh;
+  background-color: #1f282e;
+  color: #4FFFB0;
+  display: flex;
+  justify-content: center;
+}
+
+#profile-image {
+  display: flex;
+}
+
+#profile-image .profile-image{
+  position: absolute;
+  height: 90%;
+}
+
+#profile-container .icon {
+  height: 60px;
+}
+
+.background-circle {
+  position: relative;
+  background-color: #2e3b44;
+  height: 500px;
+  width: 500px;
+  margin-top: 100px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.icon1 {
+  position: absolute;
+  bottom: 0;
+}
+
+.icon2 {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+}
+
+.profile-header {
+  background-color: #1f282e;
+}
+
+#profile-decription {
+  margin-top: 150px;
+}
+
+.neon-button {
+  width: 120px;
+  background-color:#4FFFB0;
+  font-size: 15px;
+  padding: 8px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  margin: 0px 5px 5px 0;
+}
+
+#skills img{
+  background-color: #1f282e;
+  height: 60px;
+}

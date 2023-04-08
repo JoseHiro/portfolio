@@ -1,7 +1,7 @@
 import React from 'react';
-import image from '../img/retro_bg_17.png'
-import image2 from '../img/7sn5o1woonmklx1h.png'
-import image3 from '../img/pexels-aleksandar-pasaric-2506923.jpg'
+import image from '../../img/retro_bg_17.png'
+import image2 from '../../img/7sn5o1woonmklx1h.png'
+import image3 from '../../img/tokyo-view.jpg'
 import Carousel from 'react-bootstrap/Carousel';
 
 
