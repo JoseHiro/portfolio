@@ -64,7 +64,9 @@ function CardList(props){
 
   return (
     (props.cardList === 1)?
-      cardData1.map(data => <SingleCard title={data.title}
+      cardData1.map(data => <SingleCard
+      key={data.cardNumber}
+      title={data.title}
       imgLink={data.imgLink}
       text={data.text}
       clickedStatus={data.clickedStatus}
@@ -74,7 +76,9 @@ function CardList(props){
       setButtonStatus={props.setButtonStatus}
       />)
       :
-      cardData2.map(data => <SingleCard title={data.title}
+      cardData2.map(data => <SingleCard
+      key={data.cardNumber}
+      title={data.title}
       imgLink={data.imgLink}
       text={data.text}
       clickedStatus={data.clickedStatus}

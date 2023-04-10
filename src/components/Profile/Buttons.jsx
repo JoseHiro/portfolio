@@ -5,7 +5,7 @@ function Buttons(){
   <div id="profile-decription">
     <h1>Welcome to my page</h1>
     <h4><pre>
-      <h3>&lt;h4&gt;hello&lt;/h4&gt;</h3>
+      {/* <h3>&lt;h4&gt;hello&lt;/h4&gt;</h3> */}
       <h3>&lt;h4&gt;My name is Josey&lt;/h4&gt;</h3>
       <pre>
         const favs =  &#123; <br/>
