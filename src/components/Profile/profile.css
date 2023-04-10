@@ -1,10 +1,18 @@
 #profile-container {
   height: 100vh;
-  background-color: #1f282e;
+  /* background-color: #1f282e; */
+  background-color: #12171b;
   color: #4FFFB0;
   display: flex;
   justify-content: center;
+  box-shadow: 0 8px 6px -6px black;
 }
+
+.profile-header {
+  /* background-color: #1f282e; */
+  background-color: #12171b;
+}
+
 
 #profile-image {
   display: flex;
@@ -21,7 +29,8 @@
 
 .background-circle {
   position: relative;
-  background-color: #2e3b44;
+  background-color: #2c3840;
+  /* background-color: #1f282e; */
   height: 500px;
   width: 500px;
   margin-top: 100px;
@@ -40,9 +49,6 @@
   left: 60px;
 }
 
-.profile-header {
-  background-color: #1f282e;
-}
 
 #profile-decription {
   margin-top: 150px;
@@ -59,7 +65,95 @@
   margin: 0px 5px 5px 0;
 }
 
-#skills img{
-  background-color: #1f282e;
-  height: 60px;
+#body-container {
+  background-color: #161c20;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#card-deck {
+  padding-top: 80px;
+}
+
+#card-deck .body-card {
+  width: 300px;
+  height: 100px;
+  /* background-color: #1f282e; */
+  background-color: #12171b;;
+  color: rgb(159, 156, 156);
+  margin-top: 20px;
+  margin-right:10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#big-card{
+  margin-left:10px;
+  margin-top: 80px;
+  width: 500px;
+  height: 500px;
+  color:white;
+  display: flex;
+  /* background-color: #1f282e; */
+  background-color: #12171b;;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#bigcard-button-set {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.long-button {
+  height: 90px;
+  width: 3px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(159, 156, 156);
+}
+
+.special-long-button {
+  background-color: white;
+}
+
+.bigcard-text {
+  margin-top: 50px;
+}
+
+.bigcard-text p{
+  color: rgb(159, 156, 156);
+  width: 70%;
+  margin-left: 50px;
+}
+
+#profile-footer {
+  background-color: #161c20;
+  /* background-color: #0e1114; */
+  height: 600px;
+}
+
+.skills img{
+  height: 40px;
+  margin: 5px;
+  background-color: #12171b;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#cards-footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#cards-footer .card-footer {
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  background-color: #12171b;;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card-line {
+
 }

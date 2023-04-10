@@ -13,18 +13,32 @@ import cplusplus from '../../img/icons/c.png';
 
 
 function Skills(){
-  return <div id="skills">
-    <img className="icon" alt="" src={node}></img>
-    <img className="icon" alt="" src={javascript}></img>
-    <img className="icon" alt="" src={react}></img>
-    <img className="icon" alt="" src={ruby}></img>
-    <img className="icon" alt="" src={cplusplus}></img>
-    <img className="icon" alt="" src={mongoDb}></img>
-    <img className="icon" alt="" src={html}></img>
-    <img className="icon" alt="" src={css}></img>
-    <img className="icon" alt="" src={mysql}></img>
-    <img className="icon" alt="" src={git}></img>
-    <img className="icon" alt="" src={bootstrap}></img>
+  return <div id="profile-footer">
+    <section id="cards-footer">
+      <div className="card-footer skills">
+        <div className="card-line">
+          <img className="icon" alt="" src={node}></img>
+          <img className="icon" alt="" src={javascript}></img>
+          <img className="icon" alt="" src={react}></img>
+          <img className="icon" alt="" src={ruby}></img>
+        </div>
+        <div className="card-line">
+          <img className="icon" alt="" src={cplusplus}></img>
+          <img className="icon" alt="" src={mongoDb}></img>
+          <img className="icon" alt="" src={html}></img>
+        </div>
+        <div className="card-line">
+          <img className="icon" alt="" src={css}></img>
+          <img className="icon" alt="" src={mysql}></img>
+        </div>
+        <div className="card-line">
+          <img className="icon" alt="" src={git}></img>
+          <img className="icon" alt="" src={bootstrap}></img>
+        </div>
+      </div>
+      <div className="card-footer"></div>
+      <div className="card-footer"></div>
+    </section>
   </div>
 }
 

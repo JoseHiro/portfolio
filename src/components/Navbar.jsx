@@ -26,7 +26,7 @@ function Header(){
       <div className="nav-contents">
         <h2 href='/'>Portforlio</h2>
         {navLinks.map(data => {
-          return <NavSubContents key={data.key} title={data.title} url={data.url}/>
+          return <NavSubContents key={data.id} title={data.title} url={data.url}/>
         })}
           <a href="/"><GitHubIcon/></a>
           <a href="/"><LinkedInIcon/></a>

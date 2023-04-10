@@ -26,6 +26,7 @@ function ThirdBody(){
       <div className="buttons">
       <h1>Skills</h1>
         {buttonsData.map((data) => <Buttons
+        key={data.id}
         setButtonStatus={setClickStatus}
         btnId={data.id}
         btnClass={data.className}

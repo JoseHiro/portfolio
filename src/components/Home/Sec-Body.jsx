@@ -26,6 +26,7 @@ function SecBody(){
       <div className="buttons">
         <h1>Works</h1>
         {buttonsData.map((data) => <Buttons
+          key={data.id}
           setButtonStatus={setClickStatus}
           btnId={data.id}
           btnClass={data.className}
