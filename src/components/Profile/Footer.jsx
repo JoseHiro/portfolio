@@ -11,8 +11,13 @@ import git from '../../img/icons/git.png';
 import bootstrap from '../../img/icons/bootstrap.png';
 import cplusplus from '../../img/icons/c.png';
 
+import {CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
 
 function Skills(){
+  const percentage = 66;
+
   return <div id="profile-footer">
     <section id="cards-footer">
       <div className="card-footer skills">
@@ -36,7 +41,60 @@ function Skills(){
           <img className="icon" alt="" src={bootstrap}></img>
         </div>
       </div>
-      <div className="card-footer"></div>
+
+      <div className="card-footer">
+       <div className="language-skill language">
+        <h4>Japanese</h4>
+        <div className="progressbar" style={{ width: 70 }}>
+          <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({
+          // Colors
+          pathColor: `rgba(79,255,176, ${percentage / 100})`,
+          textColor: '#4FFFB0',
+          trailColor: 'rgb(159, 156, 156)',
+          // backgroundColor: '#4FFFB0',
+        })}/>
+        </div>
+       </div>
+       <div className="language-skill">
+        <h4>English</h4>
+        <div className="progressbar" style={{ width: 70 }}>
+          <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({
+          // Colors
+          pathColor: `rgba(79,255,176, ${percentage / 100})`,
+          textColor: '#4FFFB0',
+          trailColor: 'rgb(159, 156, 156)',
+          // backgroundColor: '#4FFFB0',
+        })}/>
+        </div>
+       </div>
+       <div className="language-skill">
+        <h4>Spanish</h4>
+        <div className="progressbar" style={{ width: 60 }}>
+          <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({
+          // Colors
+          pathColor: `rgba(79,255,176, ${percentage / 100})`,
+          textColor: '#4FFFB0',
+          trailColor: 'rgb(159, 156, 156)',
+          // backgroundColor: '#4FFFB0',
+        })}/>
+        </div>
+       </div>
+       <div className="language-skill">
+        <h4>Portuguese</h4>
+        <div className="progressbar" style={{ width: 60 }}>
+          <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({
+          // pathTransition:
+          //       percentage === 0 ? "none" : "stroke-dashoffset 0.5s ease 0s",
+          // Colors
+          pathColor: `rgba(79,255,176, ${percentage / 100})`,
+          textColor: '#4FFFB0',
+          trailColor: 'rgb(159, 156, 156)',
+          // backgroundColor: '#4FFFB0',
+        })}/>
+        </div>
+       </div>
+      </div>
+
       <div className="card-footer"></div>
     </section>
   </div>
