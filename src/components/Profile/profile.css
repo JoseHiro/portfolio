@@ -77,8 +77,8 @@
 }
 
 #card-deck .body-card {
-  width: 300px;
-  height: 100px;
+  width: 350px;
+  height: 130px;
   /* background-color: #1f282e; */
   background-color: #12171b;;
   color: rgb(159, 156, 156);
@@ -87,11 +87,15 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+.body-card .card-detail-year{
+  display: flex;
+}
+
 #big-card{
   margin-left:10px;
   margin-top: 80px;
   width: 500px;
-  height: 500px;
+  height: 600px;
   color:white;
   display: flex;
   /* background-color: #1f282e; */
@@ -132,6 +136,10 @@
   height: 600px;
 }
 
+.skills {
+  /* top: 80px; */
+}
+
 .skills img{
   height: 40px;
   margin: 5px;
@@ -143,12 +151,12 @@
   display: flex;
   justify-content: center;
   text-align: center;
-
 }
 
 #cards-footer .card-footer {
   height: 400px;
-  width: 300px;
+  width: 400px;
+  padding-top: 40px;
   margin: 10px;
   background-color: #12171b;;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -156,4 +164,21 @@
 
 .card-line {
 
+}
+
+.language {
+}
+
+.language-skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin-top:15px;
+  color: rgb(159, 156, 156);
+}
+
+.progressbar {
+  display: flex;
+  align-items: center;
 }
