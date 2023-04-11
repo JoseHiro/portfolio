@@ -21,6 +21,7 @@ function Skills(){
   return <div id="profile-footer">
     <section id="cards-footer">
       <div className="card-footer skills">
+      <h4>Skills</h4>
         <div className="card-line">
           <img className="icon" alt="" src={node}></img>
           <img className="icon" alt="" src={javascript}></img>
@@ -43,6 +44,7 @@ function Skills(){
       </div>
 
       <div className="card-footer">
+      <h4>Language</h4>
        <div className="language-skill language">
         <h4>Japanese</h4>
         <div className="progressbar" style={{ width: 70 }}>
@@ -95,7 +97,9 @@ function Skills(){
        </div>
       </div>
 
-      <div className="card-footer"></div>
+      <div className="card-footer">
+        <h4>Links</h4>
+      </div>
     </section>
   </div>
 }

@@ -1,12 +1,21 @@
 import React from 'react';
+import Typed from 'react-typed';
 
 function Buttons(){
   return (
   <div id="profile-decription">
-    <h1>Welcome to my page</h1>
+    <h1>
+      <Typed strings={["&lt;h1&gt;Welcome&lt;/h1&gt;"]}
+        typeSpeed={80}
+        backSpeed={80}
+        loop
+      />
+    </h1>
     <h4><pre>
-      {/* <h3>&lt;h4&gt;hello&lt;/h4&gt;</h3> */}
-      <h3>&lt;h4&gt;My name is Josey&lt;/h4&gt;</h3>
+      {/* <Typed strings={["&lt;h4&gt;const name= Josey; &lt;/h4&gt;"]}
+        typeSpeed={90}
+      /> */}
+      <h3>&lt;h4&gt;const name = "Josey"; &lt;/h4&gt;</h3>
       <pre>
         const favs =  &#123; <br/>
         skiils: "Node.js React", <br/>
@@ -18,7 +27,7 @@ function Buttons(){
     </pre></h4>
     <div>
       <button className="neon-button">Contact</button>
-      <button className="neon-button">Skills</button>
+      <button className="neon-button">Projects</button>
     </div>
     <div className="profile-description"></div>
     <div className="profile-description"></div>
