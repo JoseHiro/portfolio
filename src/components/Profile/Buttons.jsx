@@ -6,8 +6,8 @@ function Buttons(){
   <div id="profile-decription">
     <h1>
       <Typed strings={["&lt;h1&gt;Welcome&lt;/h1&gt;"]}
-        typeSpeed={80}
-        backSpeed={80}
+        typeSpeed={90}
+        backSpeed={90}
         loop
       />
     </h1>

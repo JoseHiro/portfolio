@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Body from './Body';
 import Skills from './Footer';
+import Contacts from './Contacts';
 import './profile.css'
 
 function Profile(){
@@ -12,6 +13,8 @@ function Profile(){
       </div>
       <Body/>
       <Skills/>
+      <Contacts></Contacts>
+
     </>
     )
 }
