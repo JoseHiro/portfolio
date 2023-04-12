@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import LongButton from './Long-button';
+import './body.css'
 
 function Body(){
 
@@ -23,44 +24,42 @@ function Body(){
     setStatus(id);
   }
 
-  return <div id="body-container">
-    <section id="card-deck">
-      <div className="body-card body-card1">
-        <div className="card-detail-year">
-          <h1>2</h1>
+  return <section id="body_container">
+    <div id="card_deck">
+      <article className="body_card body_card1">
+        <div className="card_detail_year">
+          <h1>2+</h1>
           <h2>&nbsp;years</h2>
         </div>
-        <h3>of Experience</h3>
-      </div>
-      <div className="body-card">
+        <h3>Junior Full Stack</h3>
+      </article>
+      <article className="container body_card">
         <h5>Education</h5>
         <p>Le Wagon Web development Bootcamp Mexico</p>
         <p>Houston Community College US</p>
         <p>Rishho University Japan</p>
-      </div>
-      <div className="body-card">
+      </article>
+      <article className="container body_card">
         <h5>Certificates</h5>
         <p>Testing Ruby with RSpec: The Complete Guide</p>
         <p>Diploma de Español como Lengua Extranjera B2</p>
-      </div>
-      {/* <div className="body-card">
-      </div> */}
-    </section>
+      </article>
+    </div>
 
-    <section id="big-card">
-      <nav id="bigcard-button-set">
+    <div id="big_card">
+      <nav id="bigcard_button_set">
         {longButtons.map((data, index) => <LongButton
         mouseEnter={handleButtonState} key={data.id} id={data.id}
-        classN={`long-button ${buttonStatus === index && "special-long-button"}`}
+        classN={`long_button ${buttonStatus === index && "special_long-button"}`}
         />
         )}
       </nav>
-      <article className="bigcard-text">
+      <article className="bigcard_text">
         <p>{history[buttonStatus].time}</p>
         <p>{history[buttonStatus].text}</p>
       </article>
-    </section>
-  </div>
+    </div>
+  </section>
 }
 
 export default Body;

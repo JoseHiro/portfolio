@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfileImage from './Profile-photo';
-import Buttons from './Buttons';
+import Buttons from '../Body/Buttons';
 
 function Header(){
   return <>

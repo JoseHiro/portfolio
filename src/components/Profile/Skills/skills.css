@@ -1,0 +1,65 @@
+
+#profile_footer {
+  background-color: #161c20;
+  /* background-color: #0e1114; */
+  height: 600px;
+}
+
+.skills {
+  /* top: 80px; */
+}
+
+.skills img{
+  height: 40px;
+  margin: 5px;
+  background-color: #12171b;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#cards_footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#cards_footer .card_footer {
+  height: 400px;
+  width: 400px;
+  padding-top: 20px;
+  margin: 10px;
+  background-color: #12171b;;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(79,255,176, 0.23) 0px 6px 6px;
+}
+
+.card_footer:hover {
+  border: 2px solid #4FFFB0;
+}
+
+.card_footer h4 {
+  color:white;
+}
+
+.card_line {
+ margin-top: 20px;
+}
+
+.language_skill {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+  width: 280px;
+  margin-top:15px;
+  color: rgb(159, 156, 156);
+}
+
+.language_skill h4 {
+  color:rgb(159, 156, 156);
+  margin-left: 50px;
+}
+
+.progressbar {
+  display: flex;
+  align-items: center;
+}
