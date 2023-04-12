@@ -10,9 +10,9 @@ function Header(){
   if(currentPath === '/'){
     classN = "home-header";
   } else if(currentPath === '/profile'){
-    classN = "profile-header";
+    classN = "profile_header";
   }else{
-    classN = "projects-header";
+    classN = "projects_header";
   }
 
   const navLinks = [
@@ -24,6 +24,8 @@ function Header(){
   return (
     <header className={classN}>
       <div className="nav-contents">
+
+
         <h2 href='/'>Portforlio</h2>
         {navLinks.map(data => {
           return <NavSubContents key={data.id} title={data.title} url={data.url}/>

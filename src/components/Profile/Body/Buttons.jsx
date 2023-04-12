@@ -3,11 +3,11 @@ import Typed from 'react-typed';
 
 function Buttons(){
   return (
-  <div id="profile-decription">
+  <div id="profile_decription">
     <h1>
       <Typed strings={["&lt;h1&gt;Welcome&lt;/h1&gt;"]}
-        typeSpeed={90}
-        backSpeed={90}
+        typeSpeed={120}
+        backSpeed={120}
         loop
       />
     </h1>
@@ -26,11 +26,11 @@ function Buttons(){
       </pre>
     </pre></h4>
     <div>
-      <button className="neon-button">Contact</button>
-      <button className="neon-button">Projects</button>
+      <button className="neon_button">Contact</button>
+      <button className="neon_button">Projects</button>
     </div>
-    <div className="profile-description"></div>
-    <div className="profile-description"></div>
+    <div className="profile_description"></div>
+    <div className="profile_description"></div>
   </div>
   )
 }
