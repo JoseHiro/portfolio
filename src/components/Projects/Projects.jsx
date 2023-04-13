@@ -5,7 +5,6 @@ import './projects.css'
 function Projects(){
   return (
       <div id="projects-container">
-
         <h1>Helloooooooo</h1>
         <Body/>
       </div>

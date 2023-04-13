@@ -1,14 +1,13 @@
 import React, { useRef }from 'react';
-import './contact.css';
 import {AiOutlineMail} from 'react-icons/ai'
 import {RiMessengerLine} from 'react-icons/ri'
 import {RiWhatsappFill} from 'react-icons/ri'
 import emailjs from 'emailjs-com';
 
+import './contact.css';
 
 function Contacts(){
   const form = useRef();
-
   const emailKey = process.env.REACT_APP_EMIALJS_KEY;
   const emailTemplate = process.env.REACT_APP_EMAILJS_TEMPLATE;
   const emailId = process.env.REACT_APP_EMAILJS_ID;
@@ -20,10 +19,8 @@ function Contacts(){
   };
 
   return <section id="contact">
-      <h5 className="contact_title">Get in Touch</h5>
-      <h5 className="contact_message" >Contact me</h5>
-
-
+      <h5 className="container_title">Get in Touch</h5>
+      <h5 className="container_message" >Contact me</h5>
 
       <div className="container contact_container">
         <div className="contact_options">
@@ -50,7 +47,7 @@ function Contacts(){
           <input type="text" name="name" placeholder='Your Full Name' required></input>
           <input type="email" name="email" placeholder='Your Email address' required></input>
           <textarea name="message" id="" placeholder="Your Message" cols="30" rows="7" required/>
-          <button type="sumbit" className='neon-button'>Send message</button>
+          <button type="sumbit" className='neon_button'>Send message</button>
         </form>
       </div>
     </section>

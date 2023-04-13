@@ -6,7 +6,7 @@ import image4 from '../../../img/profile-picture/face4.png';
 import image5 from '../../../img/profile-picture/face5.png';
 import node from '../../../img/icons/node-js.png'
 import react from '../../../img/icons/react.png'
-import './header.css';
+
 
 function ProfileImage(){
 
@@ -15,15 +15,13 @@ function ProfileImage(){
   const images = [image1, image2, image3, image4, image5];
 
   return (
-    <div id="profile_image">
+    <article id="profile_image">
       <div className="background_circle">
         <img className="profile_image" alt="" src={images[imageNum]}></img>
         <img className="icon icon1" alt="" src={node}></img>
         <img className="icon icon2" alt="" src={react}></img>
-        {/* <img className="icon icon2" alt="" src={javascript}></img> */}
       </div>
-      {/* <img className="icon icon3" alt="" src={javascript}></img> */}
-    </div>
+    </article>
   )
 }
 

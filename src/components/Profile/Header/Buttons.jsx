@@ -3,7 +3,7 @@ import Typed from 'react-typed';
 
 function Buttons(){
   return (
-  <div id="profile_decription">
+  <article id="profile_decription">
     <h1>
       <Typed strings={["&lt;h1&gt;Welcome&lt;/h1&gt;"]}
         typeSpeed={120}
@@ -12,9 +12,6 @@ function Buttons(){
       />
     </h1>
     <h4><pre>
-      {/* <Typed strings={["&lt;h4&gt;const name= Josey; &lt;/h4&gt;"]}
-        typeSpeed={90}
-      /> */}
       <h3>&lt;h4&gt;const name = "Josey"; &lt;/h4&gt;</h3>
       <pre>
         const favs =  &#123; <br/>
@@ -31,7 +28,7 @@ function Buttons(){
     </div>
     <div className="profile_description"></div>
     <div className="profile_description"></div>
-  </div>
+  </article>
   )
 }
 

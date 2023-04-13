@@ -2,9 +2,11 @@ import React from 'react';
 
 function Footer(){
   return (
-    <footer>
-      <p>Copy Right©️</p>
-    </footer>
+    <section>
+      <footer>
+        <p>Copy Right©️</p>
+      </footer>
+    </section>
   )
 }
 

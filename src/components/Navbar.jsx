@@ -16,23 +16,21 @@ function Header(){
   }
 
   const navLinks = [
-    {title: "Home", url: "/" },
-    {title: "Profiles", url: "/profile" },
-    {title: "Projects", url: "/projects" },
+    {title: "Profiles", url: "#profile" },
+    {title: "Projects", url: "#projects" },
+    {title: "Contacts", url: "#contact" },
     // {title: "Profiles", url: "/projects" }
   ]
   return (
     <header className={classN}>
-      <div className="nav-contents">
-
-
+      <nav className="nav-contents">
         <h2 href='/'>Portforlio</h2>
         {navLinks.map(data => {
           return <NavSubContents key={data.id} title={data.title} url={data.url}/>
         })}
           <a href="/"><GitHubIcon/></a>
           <a href="/"><LinkedInIcon/></a>
-        </div>
+      </nav>
     </header>
   )
 }
