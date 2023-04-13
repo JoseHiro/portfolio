@@ -13,53 +13,54 @@ function Body(){
     { time: '2021 Spring -', text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to" }
   ]
 
-  const longButtons = [
-    { id: 0 },
-    { id: 1 },
-    { id: 2 },
-    { id: 3 }
-  ]
+  const longButtons = [ { id: 0 }, { id: 1 }, { id: 2 }, { id: 3 } ]
 
   function handleButtonState(id){
     setStatus(id);
   }
 
-  return <section id="body_container">
-    <div id="card_deck">
-      <article className="body_card body_card1">
-        <div className="card_detail_year">
-          <h1>2+</h1>
-          <h2>&nbsp;years</h2>
+  return (
+    <section id="history">
+      <h5 className="container_title">Get to know me</h5>
+      <h5 className="container_message" >Career</h5>
+      <div className='container history_container'>
+        <div id="card_deck">
+          <article className="body_card body_card1">
+            <div className="card_detail_year">
+              <h1>2+</h1>
+              <h2>&nbsp;years</h2>
+            </div>
+            <h3>Junior Full Stack</h3>
+          </article>
+          <article className="container body_card">
+            <h5>Education</h5>
+            <p>Le Wagon Web development Bootcamp Mexico</p>
+            <p>Houston Community College US</p>
+            <p>Rishho University Japan</p>
+          </article>
+          <article className="container body_card">
+            <h5>Certificates</h5>
+            <p>Testing Ruby with RSpec: The Complete Guide</p>
+            <p>Diploma de Español como Lengua Extranjera B2</p>
+          </article>
         </div>
-        <h3>Junior Full Stack</h3>
-      </article>
-      <article className="container body_card">
-        <h5>Education</h5>
-        <p>Le Wagon Web development Bootcamp Mexico</p>
-        <p>Houston Community College US</p>
-        <p>Rishho University Japan</p>
-      </article>
-      <article className="container body_card">
-        <h5>Certificates</h5>
-        <p>Testing Ruby with RSpec: The Complete Guide</p>
-        <p>Diploma de Español como Lengua Extranjera B2</p>
-      </article>
-    </div>
 
-    <div id="big_card">
-      <nav id="bigcard_button_set">
-        {longButtons.map((data, index) => <LongButton
-        mouseEnter={handleButtonState} key={data.id} id={data.id}
-        classN={`long_button ${buttonStatus === index && "special_long-button"}`}
-        />
-        )}
-      </nav>
-      <article className="bigcard_text">
-        <p>{history[buttonStatus].time}</p>
-        <p>{history[buttonStatus].text}</p>
-      </article>
+        <article id="big_card">
+          <nav id="bigcard_button_set">
+            {longButtons.map((data, index) => <LongButton
+            mouseEnter={handleButtonState} key={data.id} id={data.id}
+            classN={`long_button ${buttonStatus === index && "special_long-button"}`}
+            />
+            )}
+          </nav>
+          <div className="bigcard_text">
+            <p>{history[buttonStatus].time}</p>
+            <p>{history[buttonStatus].text}</p>
+          </div>
+        </article>
     </div>
   </section>
+  )
 }
 
 export default Body;
