@@ -23,7 +23,7 @@ function Skills(){
   const portuguese = 30;
 
   return (
-    <section id="profile_footer">
+    <section id="skills">
       <h5 className="contact_title">Technics that I know</h5>
       <h5 className="contact_message" >Skills</h5>
       <div id="cards_footer">

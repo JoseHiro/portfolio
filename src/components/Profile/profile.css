@@ -1,9 +1,27 @@
 * {
   /* background-color: #161c20; */
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #1f1f38;
+  --color-neon-green:#4FFFB0;
+  --color-general-background: #12171b;
+  --color-white: white;
+  --color-grey: rgb(159, 156, 156);
+  --dark-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-ms: 90%;
+}
+
+.container {
+  width: 75%;
 }
 
 section {
-  /* height: 100vh; */
   padding-top: 8rem;
   padding-bottom: 3rem;
   background-color: #161c20;
@@ -15,7 +33,7 @@ html {
 
 .neon_button {
   width: 120px;
-  background-color:#4FFFB0;
+  background-color:var(--color-neon-green);
   font-size: 15px;
   padding: 8px 0;
   cursor: pointer;
@@ -26,4 +44,27 @@ html {
 
 .neon_button:hover {
   border: 2px solid white;
+}
+
+section > h5 {
+  color: var(--color-grey);
+}
+
+
+@media screen and (max-width: 1024px){
+  .container {
+    width: var(--container-width-md);
+  }
+
+  .section {
+    padding-top: 6px;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .container {
+    width: var(--container-width-sm);
+  }
+
 }

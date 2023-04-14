@@ -1,8 +1,5 @@
-
-#profile_footer {
+#skills {
   background-color: #161c20;
-  /* background-color: #0e1114; */
-  /* height: 600px; */
   text-align: center;
 }
 
@@ -10,8 +7,8 @@
   object-fit: cover;
   height: 40px;
   margin: 5px;
-  background-color: #12171b;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: var(--color-general-background);
+  box-shadow: var(--dark-shadow);
 }
 
 #cards_footer {
@@ -26,17 +23,16 @@
   width: 400px;
   padding-top: 20px;
   margin: 10px;
-  background-color: #12171b;;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(79,255,176, 0.23) 0px 6px 6px; */
+  background-color: var(--color-general-background);
+  box-shadow: var(--dark-shadow);
 }
 
 .card_footer:hover {
-  border: 2px solid #4FFFB0;
+  border: 2px solid var(--color-neon-green);
 }
 
 .card_footer h4 {
-  color:white;
+  color:var(--color-white);
 }
 
 .card_line {
@@ -46,15 +42,14 @@
 .language_skill {
   display: flex;
   justify-content: space-between;
-  /* justify-content: center; */
   align-items: center;
   width: 280px;
   margin-top:15px;
-  color: rgb(159, 156, 156);
+  color: var(--color-grey);
 }
 
 .language_skill h4 {
-  color:rgb(159, 156, 156);
+  color: var(--color-grey);
   margin-left: 50px;
 }
 
@@ -76,7 +71,20 @@
 
 #profile_footer .contact_message{
   font-weight: bold;
-  color: #4FFFB0;
+  color: var(--color-neon-green);
   font-size: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  #cards_footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and(max-width: 620px) {
+
 }
