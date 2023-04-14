@@ -11,10 +11,6 @@
   gap: 12%;
 }
 
-#contact .container_title{
-  color: rgb(159, 156, 156);
-}
-
 #contact .container_message{
   font-weight: bold;
   color: #4FFFB0;
@@ -70,4 +66,18 @@ input, textarea {
 .neon_button {
   text-decoration: none;
   color:black;
+}
+
+
+@media screen and (max-width: 1024px){
+  .container.contact_container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .container.contact_container {
+    width: var(--container-width-sm);
+  }
 }

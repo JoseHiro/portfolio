@@ -9,12 +9,8 @@
   background-color: #12171b;
 }
 
-#profile_image {
-  display: flex;
-}
 
-#profile_image .profile-image{
-  position: absolute;
+.profile-image{
   height: 90%;
 }
 
@@ -44,4 +40,46 @@
 
 #profile_decription {
   margin-left: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  #profile_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+
+  .background_circle {
+    margin: 0 auto;
+  }
+
+  .background_circle {
+    height: 450px;
+    width: 450px;
+  }
+
+  #profile_decription{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .name_favs {
+    text-align: center;
+    display: block;
+  }
+
+  .name_favs h4{
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .background_circle {
+    height: 300px;
+    width: 300px;
+  }
 }

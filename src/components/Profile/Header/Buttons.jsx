@@ -11,20 +11,25 @@ function Buttons(){
         loop
       />
     </h1>
-    <h4><pre>
-      <h3>&lt;h4&gt;const name = "Josey"; &lt;/h4&gt;</h3>
-      <pre>
+    <div className='name_favs'>
+      {/* <h3>&lt;h4&gt;const name = "Josey"; &lt;/h4&gt;</h3> */}
+      <h3>const name = "Josey";</h3>
+      <h4 ><pre>
         const favs =  &#123; <br/>
         skiils: "Node.js React", <br/>
         sports: "Soccer",<br/>
         country: "Brazil Spain", <br/>
         food: "Ramen Chocolate" <br/>
         &#125;
-      </pre>
-    </pre></h4>
+      </pre></h4>
+    </div>
     <div>
-      <button className="neon_button">Contact</button>
-      <button className="neon_button">Projects</button>
+      <a href="/#contact">
+        <button className="neon_button">Contact</button>
+      </a>
+      <a href="/#projects">
+        <button className="neon_button">Projects</button>
+      </a>
     </div>
     <div className="profile_description"></div>
     <div className="profile_description"></div>

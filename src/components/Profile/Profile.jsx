@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header/Header';
+import Nav from './Nav/Nav';
 import Body from './History/History';
 import Skills from './Skills/Skills';
 import Contacts from './Contact/Contacts';
@@ -8,15 +9,14 @@ import './profile.css'
 
 function Profile(){
   return (
-    <>
-      <div id="profile_container">
+      <>
         <Header/>
-      </div>
-      <Body/>
-      <Projects/>
-      <Skills/>
-      <Contacts></Contacts>
-    </>
+        <Nav/>
+        <Body/>
+        <Projects/>
+        <Skills/>
+        <Contacts></Contacts>
+      </>
     )
 }
 export default Profile;

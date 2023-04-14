@@ -18,7 +18,8 @@ function Contacts(){
     e.target.reset();
   };
 
-  return <section id="contact">
+  return (
+    <section id="contact">
       <h5 className="container_title">Get in Touch</h5>
       <h5 className="container_message" >Contact me</h5>
 
@@ -51,6 +52,7 @@ function Contacts(){
         </form>
       </div>
     </section>
+  )
 }
 
 export default Contacts;

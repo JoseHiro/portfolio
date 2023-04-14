@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import LongButton from './Long-button';
-import './body.css'
+import './history.css'
 
 function Body(){
 
@@ -21,7 +21,7 @@ function Body(){
 
   return (
     <section id="history">
-      <h5 className="container_title">Get to know me</h5>
+      <h5>Get to know me</h5>
       <h5 className="container_message" >Career</h5>
       <div className='container history_container'>
         <div id="card_deck">
@@ -35,8 +35,8 @@ function Body(){
           <article className="container body_card">
             <h5>Education</h5>
             <p>Le Wagon Web development Bootcamp Mexico</p>
-            <p>Houston Community College US</p>
-            <p>Rishho University Japan</p>
+            <p>Houston Community College Computer Science</p>
+            <p>Rishho University Law</p>
           </article>
           <article className="container body_card">
             <h5>Certificates</h5>

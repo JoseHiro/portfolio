@@ -56,6 +56,37 @@ header a{
   justify-content: center
 } */
 
+header {
+  top: 0;
+  left: 0;
+  height: 60px;
+  margin-top:0;
+  width: 100%;
+  color: white;
+}
+
+.home-header {
+  background-color: rgba(4, 9, 9, 0.74);
+}
+
+header .nav-contents{
+  display: flex;
+}
+
+header h2{
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+header a{
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 20px;
+  color: white;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .buttons button {
   width: 100px;
   border: 2px solid #e7e7e7;

@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Projects from './Projects/Projects';
+// import Projects from './Projects/Projects';
+import Footer from './Footer';
 import Profile from './Profile/Profile';
 import Home from './Home/Home'
-import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -12,15 +12,14 @@ function App() {
     <>
       <Navbar/>
       <BrowserRouter>
-          <Routes>
-            <Route path={`/`} element={<Home/>}/>
-            <Route path={`/projects`} element={<Projects/>}/>
-            <Route path={'/profile'} element={<Profile/>}/>
-          </Routes>
+        <Routes>
+          {/* <Route path={`/`} element={<Home/>}/> */}
+          {/* <Route path={`/`} element={<Projects/>}/> */}
+          <Route path={'/'} element={<Profile/>}/>
+        </Routes>
       </BrowserRouter>
-      <Footer/>
+      <Footer></Footer>
     </>
-
   )
 }
 
