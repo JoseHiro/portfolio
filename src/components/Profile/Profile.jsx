@@ -1,17 +1,17 @@
 import React from 'react';
 import Header from './Header/Header';
-import Nav from './Nav/Nav';
+import Nav from './Nav/Mobile-Floating-Nav';
 import Body from './History/History';
 import Skills from './Skills/Skills';
 import Contacts from './Contact/Contacts';
 import Projects from './Projects/Projects';
-import './profile.css'
 
-function Profile(){
+function Profile(props){
+
   return (
       <>
         <Header/>
-        <Nav/>
+        {(props.screenSize)&& <Nav/>}
         <Body/>
         <Projects/>
         <Skills/>

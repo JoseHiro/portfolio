@@ -11,7 +11,6 @@ import react from '../../../img/icons/react.png'
 function ProfileImage(){
 
   let imageNum = Math.floor( Math.random() * 5 );
-  console.log(imageNum);
   const images = [image1, image2, image3, image4, image5];
 
   return (

@@ -59,14 +59,14 @@
   border: 2px solid var(--color-neon-green);
 }
 
-#bigcard_button_set {
-  margin-top: 50px;
+.long_buttons {
+  margin-top: 40px;
   margin-left: 50px;
 }
 
 .long_button {
-  height: 90px;
-  width: 3px;
+  height: 80px;
+  width: 4px;
   border: none;
   border-radius: 15px;
   background-color: var(--color-grey);
@@ -82,19 +82,22 @@
 
 .bigcard_text {
   margin-top: 50px;
+  margin-left: 50px;
 }
 
 .bigcard_text p{
   color: var(--color-grey);
   width: 70%;
-  margin-left: 50px;
 }
 
-#history .container_message{
-  font-weight: bold;
-  color: var(--color-neon-green);
-  font-size: 30px;
-  margin-bottom: 30px;
+.bigcard_icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+}
+
+.bigcard_icons img{
+  width: 40%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -108,11 +111,16 @@
 
   .body_card {
     width: 70% !important;
+    text-align: center;
   }
 
   #big_card {
     margin: 30px auto 0;
     width: 90%;
+  }
+
+  .body_card_detail {
+
   }
 
 }
