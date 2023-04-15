@@ -3,8 +3,8 @@ import './projects.css';
 
 function Projects(){
   return <section id="projects">
-      <h5 className="container_title">Recent works</h5>
-      <h5 className="container_message" >Projects</h5>
+      <h5 className="title">Recent works</h5>
+      <h5 className="message" >Projects</h5>
     <div className='container portfolio__container'>
       <article className='portfolio__item'>
         <div className='portfolio__item-image'>

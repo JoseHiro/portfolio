@@ -21,7 +21,7 @@ function Contacts(){
   return (
     <section id="contact">
       <h5 className="container_title">Get in Touch</h5>
-      <h5 className="container_message" >Contact me</h5>
+      <h5 className="message" >Contact me</h5>
 
       <div className="container contact_container">
         <div className="contact_options">
@@ -35,13 +35,13 @@ function Contacts(){
             <RiMessengerLine/>
             <h4>Messenger</h4>
             <h5>Josey Sekine</h5>
-            <a href="https://m.me/jocelyne.garciaarmenta" rel="noopener noreferrer" target="_blank" >Send a Message</a>
+            <a href="https://m.me/josey.sekine" rel="noopener noreferrer" target="_blank" >Send a Message</a>
           </article>
           <article className="contact_option">
             <RiWhatsappFill/>
             <h4>Whatsapp</h4>
-            <h5>+123456789</h5>
-            <a href="https://api.whatsapp.com/send?phone+523313460896" rel="noopener noreferrer" target="_blank" >Send a Message</a>
+            <h5>+523316079775</h5>
+            <a href="https://api.whatsapp.com/send?phone+523316079775" rel="noopener noreferrer" target="_blank" >Send a Message</a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>

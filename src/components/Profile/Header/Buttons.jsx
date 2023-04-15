@@ -12,7 +12,6 @@ function Buttons(){
       />
     </h1>
     <div className='name_favs'>
-      {/* <h3>&lt;h4&gt;const name = "Josey"; &lt;/h4&gt;</h3> */}
       <h3>const name = "Josey";</h3>
       <h4 ><pre>
         const favs =  &#123; <br/>

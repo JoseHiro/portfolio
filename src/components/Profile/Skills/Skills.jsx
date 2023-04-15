@@ -10,6 +10,8 @@ import mysql from '../../../img/icons/mysql.png';
 import git from '../../../img/icons/git.png';
 import bootstrap from '../../../img/icons/bootstrap.png';
 import cplusplus from '../../../img/icons/c.png';
+import jquery from '../../../img/icons/jquery.png'
+import npm from '../../../img/icons/npm.png'
 import './skills.css';
 
 import {CircularProgressbar, buildStyles } from 'react-circular-progressbar';
@@ -24,8 +26,8 @@ function Skills(){
 
   return (
     <section id="skills">
-      <h5 className="contact_title">Technics that I know</h5>
-      <h5 className="contact_message" >Skills</h5>
+      <h5 className="title">Technics that I know</h5>
+      <h5 className="message" >Skills</h5>
       <div id="cards_footer">
         <div className="card_footer skills">
           <h4>Skills</h4>
@@ -43,10 +45,12 @@ function Skills(){
           <div className="card_line">
             <img className="icon" alt="" src={css}></img>
             <img className="icon" alt="" src={mysql}></img>
+            <img className="icon" alt="" src={npm}></img>
           </div>
           <div className="card_line">
             <img className="icon" alt="" src={git}></img>
             <img className="icon" alt="" src={bootstrap}></img>
+            <img className="icon" alt="" src={jquery}></img>
           </div>
         </div>
 
@@ -100,9 +104,9 @@ function Skills(){
           </div>
         </div>
       </div>
-      <div className="card_footer">
+      {/* <div className="card_footer">
         <h4>Links</h4>
-      </div>
+      </div> */}
     </div>
   </section>
   )

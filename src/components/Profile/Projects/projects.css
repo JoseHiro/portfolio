@@ -56,14 +56,6 @@
   gap: 12%;
 }
 
-#projects .container_message{
-  font-weight: bold;
-  color: var(--color-neon-green);
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-
 @media screen and (max-width: 1024px){
   .portfolio__container {
     grid-template-columns: 1fr 1fr;
