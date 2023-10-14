@@ -11,6 +11,7 @@
   width: 350px;
   height: 180px;
   border-radius: 2rem;
+  margin-top: 20px;
   color: var(--color-grey);
   box-shadow: var(--dark-shadow);
   background-color: var(--color-general-background);
@@ -46,7 +47,7 @@
 
 #big_card{
   border-radius: 2rem;
-  margin-left:30px;
+  margin-left: 30px;
   width: 500px;
   height: 500px;
   color: var(--color-white);
@@ -60,12 +61,12 @@
 }
 
 .long_buttons {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 50px;
 }
 
 .long_button {
-  height: 80px;
+  height: 13%;
   width: 4px;
   border: none;
   border-radius: 15px;
@@ -81,13 +82,13 @@
 }
 
 .bigcard_text {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 50px;
 }
 
 .bigcard_text p{
   color: var(--color-grey);
-  width: 70%;
+  width: 80%;
 }
 
 .bigcard_icons {

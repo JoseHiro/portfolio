@@ -12,7 +12,7 @@ function Projects(){
         </div>
         <h3>Seekr</h3>
         <div className='portfolio__item-cta'>
-          <a href="http://github.com" className='neon_button'>GitHub</a>
+          <a href="https://github.com/JoseHiro/Seekr" className='neon_button'>GitHub</a>
         </div>
       </article>
       <article className='portfolio__item'>
@@ -21,7 +21,7 @@ function Projects(){
         </div>
         <h3>Ventri</h3>
         <div className='portfolio__item-cta'>
-          <a href="http://github.com" className='neon_button'>GitHub</a>
+          <a href="https://github.com/JoseHiro/Ventri" className='neon_button'>GitHub</a>
         </div>
       </article>
       <article className='portfolio__item'>
@@ -30,16 +30,16 @@ function Projects(){
         </div>
         <h3>Caralibro</h3>
         <div className='portfolio__item-cta'>
-          <a href="http://github.com" className='neon_button'>GitHub</a>
+          <a href="https://github.com/JoseHiro/Caralibro" className='neon_button'>GitHub</a>
         </div>
       </article>
       <article className='portfolio__item'>
         <div className='portfolio__item-image'>
-          <img alt="" src="https://user-images.githubusercontent.com/108254240/225114886-4b83dafb-b5e7-4f98-9708-5d506b92bb96.png"></img>
+          <img alt="" src="https://user-images.githubusercontent.com/108254240/232335056-c2dff30d-393d-44d4-ae53-78e2bada26b5.png"></img>
         </div>
-        <h3>Message node</h3>
+        <h3>Shopping website</h3>
         <div className='portfolio__item-cta'>
-          <a href="http://github.com" className='neon_button'>GitHub</a>
+          <a href="https://github.com/JoseHiro/Shopping-website" className='neon_button'>GitHub</a>
         </div>
       </article>
     </div>

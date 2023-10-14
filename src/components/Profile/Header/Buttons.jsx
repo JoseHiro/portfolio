@@ -3,7 +3,7 @@ import Typed from 'react-typed';
 
 function Buttons(){
   return (
-  <article id="profile_decription">
+  <article id="profile_description">
     <h1>
       <Typed strings={["&lt;h1&gt;Welcome&lt;/h1&gt;"]}
         typeSpeed={120}
@@ -14,15 +14,15 @@ function Buttons(){
     <div className='name_favs'>
       <h3>const name = "Josey";</h3>
       <h4 ><pre>
-        const favs =  &#123; <br/>
-        skiils: "Node.js React", <br/>
+        const likes =  &#123; <br/>
+        skills: "Node.js React", <br/>
         sports: "Soccer",<br/>
         country: "Brazil Spain", <br/>
-        food: "Ramen Chocolate" <br/>
+        foods: "Ramen Chocolate" <br/>
         &#125;
       </pre></h4>
     </div>
-    <div>
+    <div className='neon_buttons'>
       <a href="/#contact">
         <button className="neon_button">Contact</button>
       </a>

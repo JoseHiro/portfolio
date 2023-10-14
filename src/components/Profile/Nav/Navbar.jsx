@@ -15,7 +15,7 @@ function Header(){
   return (
     <header className="navbar">
       <nav className="nav_contents">
-        <h2 href='/'>Portforlio</h2>
+        <h2 href='#'>Portforlio</h2>
         {navLinks.map(data => {
           return <NavSubContents key={data.id} title={data.title} url={data.url}/>
         })}

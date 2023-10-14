@@ -33,12 +33,12 @@
   left: 60px;
 }
 
-#profile_decription {
+#profile_description {
   margin-left: 40px;
 }
 
 @media screen and (min-width: 1024px) {
-  #profile_decription {
+  #profile_description {
     width: 400px;
   }
 }
@@ -57,7 +57,7 @@
     width: 450px;
   }
 
-  #profile_decription{
+  #profile_description{
     text-align: center;
     margin-top: 20px;
   }
