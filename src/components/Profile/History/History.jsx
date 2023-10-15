@@ -23,14 +23,7 @@ function Body() {
     {
       time: "2023 Fall -",
       text: "Actively working as intern at GACCI, I contributed to the establishment of Excel-format quotation estimates from various cities, enhancing the user experience by allowing users to visualize and edit the Excel sheets more efficiently. This expansion opened up the app to a wider range of clients, as it initially targeted only companies in a specific region. Additionally, I improved the user interface (UI) by introducing features like a job-selecting toggle in forms and a search engine for specific company or user research.",
-      icons: [
-        node,
-        typescript,
-        javascript,
-        mongoDb,
-        react,
-        git,
-      ],
+      icons: [node, typescript, javascript, mongoDb, react, git],
     },
     {
       time: "2023 Spring -",
@@ -120,6 +113,10 @@ function Body() {
             <div className="body_card_detail">
               <p>Testing Ruby with RSpec: The Complete Guide</p>
               <p>Diploma de Español como Lengua Extranjera B2</p>
+              <p>NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)</p>
+              <p>
+                React - The Complete Guide 2023 (incl. React Router & Redux)
+              </p>
             </div>
           </article>
         </div>
